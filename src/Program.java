@@ -3,6 +3,7 @@ import org.lgna.story.SProgram;
 class Program extends SProgram {
     private Scene scene1;
     private Scene2 scene2;
+    private Scene3 scene3;
 
     public void createScene1() {
         scene1 = new Scene();
@@ -42,6 +43,6 @@ class Program extends SProgram {
         Program program = new Program();
 
         program.initializeInFrame(args);
-        program.createScene1();
+        program.createScene3();
     }
 }

@@ -68,25 +68,81 @@ class SceneConfig {
     private final CenturyPlant centuryPlant = new CenturyPlant();
     private final ColaBottle colaBottle2 = new ColaBottle();
 
-    SGround ground() { return ground; }
-    SCamera camera() { return camera; }
-    AdultPerson grinc() { return grinc; }
-    TeenPerson teenPerson() { return teenPerson; }
-    PineTree pineTree() { return pineTree; }
-    ConiferTree coniferTree() { return coniferTree; }
-    Mushroom mushroom() { return mushroom; }
-    ColaBottle colaBottle() { return colaBottle; }
-    FirTreeTrunk firTreeTrunk() { return firTreeTrunk; }
-    FirTreeTrunk firTreeTrunk2() { return firTreeTrunk2; }
-    Logs logs() { return logs; }
-    Flames flames() { return flames; }
-    Squirrel squirrel() { return squirrel; }
-    BearCub bearCub() { return bearCub; }
-    Bear bear() { return bear; }
-    Boulder boulder() { return boulder; }
-    Boulder boulder2() { return boulder2; }
-    CenturyPlant centuryPlant() { return centuryPlant; }
-    ColaBottle colaBottle2() { return colaBottle2; }
+    SGround ground() {
+        return ground;
+    }
+
+    SCamera camera() {
+        return camera;
+    }
+
+    AdultPerson grinc() {
+        return grinc;
+    }
+
+    TeenPerson teenPerson() {
+        return teenPerson;
+    }
+
+    PineTree pineTree() {
+        return pineTree;
+    }
+
+    ConiferTree coniferTree() {
+        return coniferTree;
+    }
+
+    Mushroom mushroom() {
+        return mushroom;
+    }
+
+    ColaBottle colaBottle() {
+        return colaBottle;
+    }
+
+    FirTreeTrunk firTreeTrunk() {
+        return firTreeTrunk;
+    }
+
+    FirTreeTrunk firTreeTrunk2() {
+        return firTreeTrunk2;
+    }
+
+    Logs logs() {
+        return logs;
+    }
+
+    Flames flames() {
+        return flames;
+    }
+
+    Squirrel squirrel() {
+        return squirrel;
+    }
+
+    BearCub bearCub() {
+        return bearCub;
+    }
+
+    Bear bear() {
+        return bear;
+    }
+
+    Boulder boulder() {
+        return boulder;
+    }
+
+    Boulder boulder2() {
+        return boulder2;
+    }
+
+    CenturyPlant centuryPlant() {
+        return centuryPlant;
+    }
+
+    ColaBottle colaBottle2() {
+        return colaBottle2;
+    }
 
     void performGeneratedSetUp(Scene scene) {
         scene.setAtmosphereColor(new Color(0.82, 0.941, 1.0));

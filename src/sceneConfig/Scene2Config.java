@@ -50,35 +50,121 @@ class Scene2Config {
         return boxes;
     }
 
-    SGround ground() { return ground; }
-    SCamera camera() { return camera; }
-    RailroadTrack railroadTrack() { return railroadTrack; }
-    RailroadTrack railroadTrack2() { return railroadTrack2; }
-    RailroadTrack railroadTrack3() { return railroadTrack3; }
-    RailroadTrack railroadTrack4() { return railroadTrack4; }
-    RailroadTrack railroadTrack5() { return railroadTrack5; }
-    RailroadTrack railroadTrack6() { return railroadTrack6; }
-    RailroadTrack railroadTrack7() { return railroadTrack7; }
-    RailroadTrack railroadTrack8() { return railroadTrack8; }
-    RailroadTrack railroadTrack9() { return railroadTrack9; }
-    RailroadTrack railroadTrack10() { return railroadTrack10; }
-    AcaciaTree acaciaTree() { return acaciaTree; }
-    AcaciaTree acaciaTree2() { return acaciaTree2; }
-    Boulder boulder() { return boulder; }
-    Boulder boulder2() { return boulder2; }
-    Bush bush() { return bush; }
-    Boulder boulder3() { return boulder3; }
-    Boulder boulder4() { return boulder4; }
-    CenturyPlant centuryPlant() { return centuryPlant; }
-    Cave cave() { return cave; }
-    Cave cave2() { return cave2; }
-    ConiferTree coniferTree() { return coniferTree; }
-    ThistlePatch thistlePatch() { return thistlePatch; }
-    ZumaRock zumaRock() { return zumaRock; }
-    CastleGate castleGate() { return castleGate; }
-    Humvee humvee() { return humvee; }
-    Box[] boxes() { return boxes; }
-    Box kapija() { return kapija; }
+    SGround ground() {
+        return ground;
+    }
+
+    SCamera camera() {
+        return camera;
+    }
+
+    RailroadTrack railroadTrack() {
+        return railroadTrack;
+    }
+
+    RailroadTrack railroadTrack2() {
+        return railroadTrack2;
+    }
+
+    RailroadTrack railroadTrack3() {
+        return railroadTrack3;
+    }
+
+    RailroadTrack railroadTrack4() {
+        return railroadTrack4;
+    }
+
+    RailroadTrack railroadTrack5() {
+        return railroadTrack5;
+    }
+
+    RailroadTrack railroadTrack6() {
+        return railroadTrack6;
+    }
+
+    RailroadTrack railroadTrack7() {
+        return railroadTrack7;
+    }
+
+    RailroadTrack railroadTrack8() {
+        return railroadTrack8;
+    }
+
+    RailroadTrack railroadTrack9() {
+        return railroadTrack9;
+    }
+
+    RailroadTrack railroadTrack10() {
+        return railroadTrack10;
+    }
+
+    AcaciaTree acaciaTree() {
+        return acaciaTree;
+    }
+
+    AcaciaTree acaciaTree2() {
+        return acaciaTree2;
+    }
+
+    Boulder boulder() {
+        return boulder;
+    }
+
+    Boulder boulder2() {
+        return boulder2;
+    }
+
+    Bush bush() {
+        return bush;
+    }
+
+    Boulder boulder3() {
+        return boulder3;
+    }
+
+    Boulder boulder4() {
+        return boulder4;
+    }
+
+    CenturyPlant centuryPlant() {
+        return centuryPlant;
+    }
+
+    Cave cave() {
+        return cave;
+    }
+
+    Cave cave2() {
+        return cave2;
+    }
+
+    ConiferTree coniferTree() {
+        return coniferTree;
+    }
+
+    ThistlePatch thistlePatch() {
+        return thistlePatch;
+    }
+
+    ZumaRock zumaRock() {
+        return zumaRock;
+    }
+
+    CastleGate castleGate() {
+        return castleGate;
+    }
+
+    Humvee humvee() {
+        return humvee;
+    }
+
+    Box[] boxes() {
+        return boxes;
+    }
+
+    Box kapija() {
+        return kapija;
+    }
 
     void performGeneratedSetUp(Scene2 scene) {
         scene.setAtmosphereColor(new Color(0.827, 0.827, 0.827));
