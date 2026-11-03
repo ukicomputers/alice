@@ -43,6 +43,6 @@ class Program extends SProgram {
         Program program = new Program();
 
         program.initializeInFrame(args);
-        program.createScene3();
+        program.createScene1();
     }
 }

@@ -62,17 +62,17 @@ class Scene extends SScene {
 
         this.config.grinc().say(
             "Došlo je do nestašice kokakole! Treba neko ko će mi dostaviti ovu kokakolu Deda Mrazu!",
-            Say.duration(4.0)
+            Say.duration(7.0)
         );
 
         if (this.config.grinc().getBooleanFromUser("Da li ćeš mi pomoći?")) {
-            this.config.teenPerson().say("Mogu ja. Daj mi kokakolu da je dostavim.", Say.duration(2.0));
+            this.config.teenPerson().say("Mogu ja. Daj mi kokakolu da je dostavim.", Say.duration(4.0));
         } else {
-            this.config.teenPerson().say("Izvini ali ja ne mogu.", Say.duration(2.0));
-            this.config.grinc().say("Moras kako bi spasao Božić!", Say.duration(2.0));
+            this.config.teenPerson().say("Izvini ali ja ne mogu.", Say.duration(3.0));
+            this.config.grinc().say("Moras kako bi spasao Božić!", Say.duration(3.0));
         }
 
-        this.config.grinc().say("Evo izvoli", Say.duration(2.0));
+        this.config.grinc().say("Evo izvoli", Say.duration(2.5));
 
         // uzima kokakolu
         doTogether(
@@ -85,7 +85,7 @@ class Scene extends SScene {
         doTogether(
             () -> this.config.colaBottle().moveTo(this.config.grinc().getRightHand()),
             () -> this.config.grinc().getRightWrist().turn(TurnDirection.LEFT, 0.25),
-            () -> this.config.grinc().say("Abrakadabra!")
+            () -> this.config.grinc().say("Abrakadabra!", Say.duration(4.0))
         );
 
         this.config.colaBottle().setVehicle(this.config.grinc().getRightHand());
@@ -93,19 +93,19 @@ class Scene extends SScene {
 
         this.config.grinc().say(
             "Večeras, moraš odneti kokakolu kod deda mraza kako bi on mogao da napravi ovaj srećan napitak za decu...",
-            Say.duration(4.0)
+            Say.duration(8.0)
         );
 
         this.config.grinc().say(
             "Put je jako strm, tako da ćeš morati da se paziš - sa strane je močvara, ako loše skreneš gotovo je",
-            Say.duration(4.0)
+            Say.duration(7.0)
         );
 
         // daje kokakolu
-        this.config.grinc().say("Uzmi kokakolu i neka te sreća prati!");
+        this.config.grinc().say("Uzmi kokakolu i neka te sreća prati!", Say.duration(4.0));
 
         doTogether(
-            () -> this.config.grinc().say("Abrakadabra!"),
+            () -> this.config.grinc().say("Abrakadabra!", Say.duration(4.0)),
             () -> this.config.grinc().setOpacity(0.0, SetOpacity.duration(4.0)),
             () -> this.config.teenPerson().getLeftWrist().turn(TurnDirection.RIGHT, 0.25),
             () -> this.config.colaBottle().moveTo(this.config.teenPerson().getLeftHand())
@@ -114,7 +114,7 @@ class Scene extends SScene {
         this.config.colaBottle().setVehicle(this.config.teenPerson().getLeftHand());
 
         // menja scenu
-        this.config.teenPerson().say("Eh, šta ću ja sada...", Say.duration(2.0));
+        this.config.teenPerson().say("Eh, šta ću ja sada...", Say.duration(3.0));
         onFinished.run();
     }
 

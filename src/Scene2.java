@@ -4,6 +4,7 @@ import org.lgna.story.Move;
 import org.lgna.story.MoveDirection;
 import org.lgna.story.MultipleEventPolicy;
 import org.lgna.story.SScene;
+import org.lgna.story.AudioSource;
 import org.lgna.story.SThing;
 import org.lgna.story.Say;
 import org.lgna.story.Turn;
@@ -46,7 +47,7 @@ class Scene2 extends SScene {
                 if (event.isKey(Key.C)) {
                     // cheat code
                     gameRunning = false;
-                    this.config.humvee().say("Cheat activated", Say.duration(1.0));
+                    this.config.humvee().say("Cheat activated", Say.duration(2.0));
                     this.config.humvee().moveTo(this.config.kapija());
                 }
             }
@@ -67,7 +68,7 @@ class Scene2 extends SScene {
 
         this.addCollisionStartListener((StartCollisionEvent event) -> {
             gameRunning = false;
-            this.config.castleGate().say("You shall not pass!", Say.duration(3.0));
+            this.config.castleGate().say("You shall not pass!", Say.duration(4.0));
 
             doTogether(
                 () -> this.config.humvee().say("Abrakadabra!", Say.duration(4.0)),
@@ -82,8 +83,8 @@ class Scene2 extends SScene {
 
     public void myFirstMethod() {
         this.config.humvee().say("Trebam poći na put.", Say.duration(2.0));
-        this.config.humvee().say("Ukoliko skrenem izvan puta, umreću.", Say.duration(2.0));
-        this.config.humvee().say("Moram ići hrabro i jako samo unapred!", Say.duration(2.0));
+        this.config.humvee().say("Ukoliko skrenem izvan puta, umreću.", Say.duration(4.0));
+        this.config.humvee().say("Moram ići hrabro i jako samo unapred!", Say.duration(4.0));
         initializeRuntimeListeners();
     }
 
