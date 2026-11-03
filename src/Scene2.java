@@ -18,6 +18,7 @@ class Scene2 extends SScene {
     private final Scene2Config config = new Scene2Config();
 
     boolean gameRunning = true;
+    Runnable onFinished;
     Runnable restart;
 
     private void initializeEventListeners() {
@@ -75,6 +76,7 @@ class Scene2 extends SScene {
             );
 
             // nova scena
+            onFinished.run();
         }, new SThing[]{this.config.humvee()}, new SThing[]{this.config.kapija()});
     }
 

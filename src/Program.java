@@ -17,11 +17,25 @@ class Program extends SProgram {
     public void createScene2() {
         scene2 = new Scene2();
 
+        scene2.onFinished = () -> {
+            createScene3();
+        };
+
         scene2.restart = () -> {
             createScene2();
         };
 
         setActiveScene(scene2);
+    }
+
+    public void createScene3() {
+        scene3 = new Scene3();
+
+        scene3.restart = () -> {
+            createScene3();
+        };
+
+        setActiveScene(scene3);
     }
 
     public static void main(String[] args) {
