@@ -7,9 +7,7 @@ if not exist dist\classes mkdir dist\classes
 
 xcopy /E /I /Y resources dist\classes\resources\
 
-dir /s /b src\*.java > dist/sources.txt
-
-"%ALICE3_ROOT%\jre\bin\javac.exe" -cp "%ALICE3_ROOT%\lib\*" -d dist\classes @dist\sources.txt
+"%ALICE3_ROOT%\jre\bin\javac.exe" -cp "%ALICE3_ROOT%\lib\*" -sourcepath src -d dist\classes src\AliceJavaFXLauncher.java
 
 if errorlevel 1 (
     pause
